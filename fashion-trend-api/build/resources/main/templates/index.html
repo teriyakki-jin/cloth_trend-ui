@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Trend Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>🧥 Fashion Trend Dashboard</h1>
+
+<h2>스타일 분석</h2>
+<canvas id="styleChart" width="400" height="200"></canvas>
+
+<h2>브랜드 분석</h2>
+<canvas id="brandChart" width="400" height="200"></canvas>
+
+<h2>가격대 분석</h2>
+<canvas id="priceChart" width="400" height="200"></canvas>
+
+<script>
+    async function fetchAndRender(url, chartId, type, label) {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        const ctx = document.getElementById(chartId).getContext('2d');
+        new Chart(ctx, {
+            type: type,
+            data: {
+                labels: Object.keys(data),
+                datasets: [{
+                    label: label,
+                    data: Object.values(data),
+                    backgroundColor: ['#ff7f50', '#87cefa', '#90ee90', '#d87093', '#ffa07a']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' },
+                    title: { display: true, text: label }
+                }
+            }
+        });
+    }
+
+    fetchAndRender('/api/style', 'styleChart', 'pie', 'Style Trends');
+    fetchAndRender('/api/brand', 'brandChart', 'bar', 'Brand Popularity');
+    fetchAndRender('/api/price', 'priceChart', 'bar', 'Price Distribution');
+</script>
+</body>
+</html>
