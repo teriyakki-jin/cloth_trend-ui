@@ -1,67 +1,74 @@
-# wconcept_trend_analysis.py
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+import pandas as pd
 import time
-import re
-from collections import Counter
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
 
-# Step 1: W Concept에서 상품명 크롤링
-def crawl_product_names(keyword="여름"):
+# 브랜드별 스타일 수동 매핑
+style_dict = {
+    "망고매니플리즈": "Minimal",
+    "닐바이피": "Y2K",
+    "주르티": "Street",
+    "미나수": "Casual",
+    "몽돌": "Minimal",
+    "시야쥬": "Casual",
+    "룩캐스트": "Feminine",
+    "리엘": "Romantic",
+    "아틀리에 나인": "Modern"
+}
+
+def crawl_wconcept_full(keyword="여름"):
     options = Options()
-    options.add_argument("--start-maximized")
+    options.add_argument("--headless")  # 브라우저 안 띄우기
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     url = f"https://www.wconcept.co.kr/Search?keyword={keyword}"
     driver.get(url)
-    time.sleep(5)
+    time.sleep(5)  # 페이지 로딩 대기
 
-    elements = driver.find_elements(By.CSS_SELECTOR, "span.text.detail")
-    product_names = [elem.text.strip() for elem in elements if elem.text.strip() != ""]
+    product_items = driver.find_elements(By.CSS_SELECTOR, "div.product-item")
+
+    brand_list = []
+    name_list = []
+    price_list = []
+    image_url_list = []
+    style_list = []
+
+    for item in product_items:
+        try:
+            brand = item.find_element(By.CSS_SELECTOR, "span.text.title").text.strip()
+            name = item.find_element(By.CSS_SELECTOR, "span.text.detail").text.strip()
+            price = item.find_element(By.CSS_SELECTOR, "span.text.final-price strong").text.strip().replace(",", "")
+            img_tag = item.find_element(By.CSS_SELECTOR, "img")
+            image_url = img_tag.get_attribute("src").split("?")[0] if img_tag else ""
+            style = style_dict.get(brand, "Other")
+
+            brand_list.append(brand)
+            name_list.append(name)
+            price_list.append(price)
+            image_url_list.append(image_url)
+            style_list.append(style)
+        except Exception as e:
+            print("Error:", e)
+            continue
 
     driver.quit()
-    return product_names
 
-# Step 2: 키워드 분석
-def extract_keywords(product_names):
-    keywords = []
-    for name in product_names:
-        clean = re.sub(r"\[.*?\]", "", name)  # [태그] 제거
-        clean = re.sub(r"[^가-힣a-zA-Z]", " ", clean)  # 특수문자 제거
-        clean = re.sub(r"\s+", " ", clean).strip()  # 공백 정리
-        keywords.extend(clean.split())
-    return Counter(keywords)
+    df = pd.DataFrame({
+        "brand": brand_list,
+        "name": name_list,
+        "price": price_list,
+        "style": style_list,
+        "image_url": image_url_list
+    })
 
-# Step 3: 워드클라우드 시각화
-def draw_wordcloud(counter):
-    wordcloud = WordCloud(
-        font_path="malgun.ttf",  # Windows 한글 폰트
-        background_color="white",
-        width=800,
-        height=400
-    ).generate_from_frequencies(counter)
-
-    plt.figure(figsize=(10, 5))
-    plt.imshow(wordcloud, interpolation="bilinear")
-    plt.axis("off")
-    plt.title("W Concept 패션 트렌드 워드클라우드", fontsize=16)
-    plt.show()
+    df.to_csv("wconcept_products.csv", index=False, encoding="utf-8-sig")
+    print("✅ CSV 저장 완료: wconcept_products.csv")
 
 # 실행
-if __name__ == "__main__":
-    print("📦 상품명 크롤링 중...")
-    products = crawl_product_names("여름")
-
-    if products:
-        print(f"✅ 상품명 {len(products)}개 수집 완료")
-        print("🧠 키워드 분석 중...")
-        keyword_counter = extract_keywords(products)
-        print("🎨 워드클라우드 시각화 시작")
-        draw_wordcloud(keyword_counter)
-    else:
-        print("❌ 상품을 가져오지 못했습니다.")
+crawl_wconcept_full("여름")

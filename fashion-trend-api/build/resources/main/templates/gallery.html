@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Gallery</title>
+    <style>
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; }
+        .product { width: 200px; text-align: center; }
+        .product img { width: 100%; border-radius: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+<h1>🎨 Filterable Fashion Gallery</h1>
+
+<form method="get" action="/gallery">
+    <label>Style:
+        <select name="style">
+            <option value="">All</option>
+            <option th:each="s : ${styles}" th:value="${s}" th:text="${s}"
+                    th:selected="${s == selectedStyle}"></option>
+        </select>
+    </label>
+
+    <label>Brand:
+        <select name="brand">
+            <option value="">All</option>
+            <option th:each="b : ${brands}" th:value="${b}" th:text="${b}"
+                    th:selected="${b == selectedBrand}"></option>
+        </select>
+    </label>
+
+    <button type="submit">Filter</button>
+</form>
+
+<div class="gallery">
+    <div class="product" th:each="p : ${products}">
+        <a th:href="@{'/product/' + ${p.id}}">
+            <img th:src="${p.imageUrl}" th:alt="${p.name}">
+        </a>
+        <div><strong th:text="${p.brand}"></strong></div>
+        <div th:text="${p.name}"></div>
+        <div th:text="'₩' + ${p.price}"></div>
+        <div th:text="${p.style}"></div>
+    </div>
+</div>
+</body>
+</html>
