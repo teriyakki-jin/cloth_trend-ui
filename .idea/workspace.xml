@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0b0849f-226e-438c-b029-86250357af22" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/easycode.ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cloth_trend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cloth_trend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowling_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/crowling_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowling_test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
@@ -23,15 +20,26 @@
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/PageController.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/Product.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/ProductService.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/ProductService.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/require_trend.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_musinsa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wconcept_trend_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/wconcept_trend_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/wconcept_products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/wconcept_products.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +68,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.crawl_wconcept.executor&quot;: &quot;Run&quot;,
     &quot;Python.crowling_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crwal_wconcept.executor&quot;: &quot;Run&quot;,
     &quot;Python.style_classifier1.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -68,7 +78,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Desktop/개발/cloth_trend/cloth_trend-ui&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Desktop/develop/cloth_trend/cloth_trend-ui&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,6 +90,26 @@
 }</component>
   <component name="RunManager">
     <configuration name="C:/Users/USER/Desktop/개발/cloth_trend/cloth_trend-ui/fashion-trend-api/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fashion-trend-api/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/USER/Desktop/develop/cloth_trend/cloth_trend-ui/fashion-trend-api/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/fashion-trend-api/build.gradle" />
@@ -120,14 +150,33 @@
       <workItem from="1744278065760" duration="196000" />
       <workItem from="1744279679493" duration="1326000" />
       <workItem from="1744349808087" duration="65000" />
+      <workItem from="1744351281794" duration="3453000" />
+      <workItem from="1744357567988" duration="1215000" />
+      <workItem from="1744367727247" duration="276000" />
+      <workItem from="1744368043573" duration="261000" />
+      <workItem from="1744368315958" duration="64000" />
+      <workItem from="1744368544911" duration="1422000" />
+      <workItem from="1744372446569" duration="28000" />
+      <workItem from="1744784956500" duration="2468000" />
+      <workItem from="1744872014766" duration="3169000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cloth_trend_ui$style_classifier1.coverage" NAME="style_classifier1 커버리지 결과" MODIFIED="1744280439042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cloth_trend_ui$crowling_test.coverage" NAME="crowling_test 커버리지 결과" MODIFIED="1744280840099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cloth_trend_ui$crawl_wconcept.coverage" NAME="crawl_wconcept 커버리지 결과" MODIFIED="1744872844256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fashion-trend-api/src/main/resources/crawler" />
   </component>
 </project>

@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="${product.name} + ' | 상세보기'">Product Detail</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .product-img {
+            width: 300px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .back {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #0077cc;
+        }
+    </style>
 </head>
 <body>
-<h2 th:text="${product.name}"></h2>
-<img th:src="${product.imageUrl}" style="width:300px;">
-<p><strong>Brand:</strong> <span th:text="${product.brand}"></span></p>
-<p><strong>Price:</strong> ₩<span th:text="${product.price}"></span></p>
-<p><strong>Style:</strong> <span th:text="${product.style}"></span></p>
-<a href="/gallery">← Back to Gallery</a>
+
+<h1 th:text="${product.name}">상품명</h1>
+
+<img th:src="${product.imageUrl}" th:alt="${product.name}" class="product-img">
+
+<p><strong>브랜드:</strong> <span th:text="${product.brand}"></span></p>
+<p><strong>스타일:</strong> <span th:text="${product.style}"></span></p>
+<p><strong>가격:</strong> ₩<span th:text="${product.price}"></span></p>
+
+<a href="/gallery" class="back">← 목록으로 돌아가기</a>
+
 </body>
 </html>

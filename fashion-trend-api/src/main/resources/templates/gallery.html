@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Product Gallery</title>
+    <title>패션 썸네일 갤러리</title>
     <style>
-        .gallery { display: flex; flex-wrap: wrap; gap: 20px; }
-        .product { width: 200px; text-align: center; }
-        .product img { width: 100%; border-radius: 10px; border: 1px solid #ccc; }
+        .style-filter {
+            margin: 20px 0;
+        }
+        .style-filter a {
+            margin-right: 10px;
+            padding: 5px 12px;
+            border-radius: 15px;
+            background-color: #eee;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .style-filter a.active {
+            background-color: #333;
+            color: #fff;
+        }
+        form.search-form {
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item {
+            width: 200px;
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .brand {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .style {
+            color: rgb(128, 128, 128);
+        }
     </style>
 </head>
 <body>
-<h1>🎨 Filterable Fashion Gallery</h1>
+<h1>W Concept 이미지 썸네일 갤러리</h1>
 
-<form method="get" action="/gallery">
-    <label>Style:
-        <select name="style">
-            <option value="">All</option>
-            <option th:each="s : ${styles}" th:value="${s}" th:text="${s}"
-                    th:selected="${s == selectedStyle}"></option>
-        </select>
-    </label>
-
-    <label>Brand:
-        <select name="brand">
-            <option value="">All</option>
-            <option th:each="b : ${brands}" th:value="${b}" th:text="${b}"
-                    th:selected="${b == selectedBrand}"></option>
-        </select>
-    </label>
-
-    <button type="submit">Filter</button>
+<!-- 🔍 검색 폼 (POST 방식으로 수정) -->
+<form action="/search" method="post" class="search-form">
+    <input type="text" name="keyword" placeholder="검색어를 입력하세요"
+           th:value="${searchedKeyword}" required />
+    <button type="submit">검색</button>
 </form>
 
+<!-- 🎯 스타일 필터 -->
+<h2>스타일 필터</h2>
+<div class="style-filter">
+    <a th:href="@{'/gallery'}" th:class="${selectedStyle} == null ? 'active' : ''">전체</a>
+    <a th:each="style : ${styles}"
+       th:href="@{'/gallery'(style=${style})}"
+       th:text="${style}"
+       th:classappend="${selectedStyle} == ${style} ? ' active' : ''">스타일</a>
+</div>
+
+<!-- 🖼️ 이미지 썸네일 -->
 <div class="gallery">
-    <div class="product" th:each="p : ${products}">
-        <a th:href="@{'/product/' + ${p.id}}">
-            <img th:src="${p.imageUrl}" th:alt="${p.name}">
-        </a>
-        <div><strong th:text="${p.brand}"></strong></div>
-        <div th:text="${p.name}"></div>
-        <div th:text="'₩' + ${p.price}"></div>
-        <div th:text="${p.style}"></div>
+    <div class="item" th:each="p : ${products}">
+        <img th:src="@{'/images/' + ${p.imageUrl}}" th:alt="${p.name}" />
+        <div class="brand" th:text="${p.brand}">브랜드</div>
+        <div class="style" th:text="${p.style}">스타일</div>
     </div>
 </div>
 </body>
