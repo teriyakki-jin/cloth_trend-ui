@@ -11,6 +11,7 @@ import com.example.fashiontrend.model.Product;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class PageController {
@@ -40,11 +41,11 @@ public class PageController {
 
 
     @GetMapping("/product/{id}")
-    public String productDetail(@PathVariable int id, Model model) {
-        List<Product> all = productService.filter(null, null);
-        if (id >= 0 && id < all.size()) {
-            model.addAttribute("product", all.get(id));
-            return "product_detail";
+    public String productDetail(@PathVariable Long id, Model model) {
+        Optional<Product> productOpt = productService.findById(id);
+        if (productOpt.isPresent()) {
+            model.addAttribute("product", productOpt.get());
+            return "product_detail"; // -> templates/product_detail.html
         }
         return "redirect:/gallery";
     }

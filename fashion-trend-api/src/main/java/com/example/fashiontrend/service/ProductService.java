@@ -75,6 +75,10 @@ public class ProductService {
     }
 
 
+    public Optional<Product> findById(Long id) {
+        return productRepository.findById(id);
+    }
+
     public void loadFromCsv() {
         File csvFile = new File("wconcept_products.csv");
         if (!csvFile.exists()) {

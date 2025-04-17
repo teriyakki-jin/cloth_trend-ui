@@ -5,41 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0b0849f-226e-438c-b029-86250357af22" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowling_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/controller/PageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/classes/java/main/com/example/fashiontrend/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/resources/main/templates/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/PageController.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/Product.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/ProductService.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/compileTransaction/stash-dir/ProductService.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/java/com/example/fashiontrend/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/crawler/wconcept_products.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/src/main/resources/templates/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-trend-api/wconcept_products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-trend-api/wconcept_products.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +140,7 @@
       <workItem from="1744368544911" duration="1422000" />
       <workItem from="1744372446569" duration="28000" />
       <workItem from="1744784956500" duration="2468000" />
-      <workItem from="1744872014766" duration="3169000" />
+      <workItem from="1744872014766" duration="3790000" />
     </task>
     <servers />
   </component>

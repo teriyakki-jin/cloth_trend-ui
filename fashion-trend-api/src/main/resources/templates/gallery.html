@@ -68,10 +68,15 @@
 <!-- 🖼️ 이미지 썸네일 -->
 <div class="gallery">
     <div class="item" th:each="p : ${products}">
-        <img th:src="@{'/images/' + ${p.imageUrl}}" th:alt="${p.name}" />
-        <div class="brand" th:text="${p.brand}">브랜드</div>
+        <a th:href="@{'/product/' + ${p.id}}">
+            <img th:src="@{'/images/' + ${p.imageUrl}}" th:alt="${p.name}" />
+        </a>
+        <a th:href="@{'/product/' + ${p.id}}">
+            <div class="brand" th:text="${p.brand}">브랜드</div>
+        </a>
         <div class="style" th:text="${p.style}">스타일</div>
     </div>
+
 </div>
 </body>
 </html>
